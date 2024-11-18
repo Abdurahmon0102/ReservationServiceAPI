@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-lp2aj@svxfmq7gz9#6i^s5!ybckv$o1+!x7^gzo5h287!ex&ft
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']# * = all
 
 
 # Application definition
@@ -80,11 +80,12 @@ WSGI_APPLICATION = 'ReservationServiceAPI.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME':  'ReservationServiceAPI',
-        'USER': 'postgres',
-        'PASSWORD': 'abdurahmon2009',
-        'HOST': 'localhost',
-        'PORT': '5433',
+        'NAME': BASE_DIR,
+    #     'NAME':  'ReservationServiceAPI',
+    #     'USER': 'postgres',
+    #     'PASSWORD': 'abdurahmon2009',
+    #     'HOST': 'localhost',
+    #     'PORT': '5433',
     }
 }
 
@@ -136,7 +137,7 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/4.2/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'uz'
 
 TIME_ZONE = 'UTC'
 
